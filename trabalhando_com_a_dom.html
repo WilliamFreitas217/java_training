@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Curso Java script</title>
+    </head>
+    <body>
+        <div id = "app">
+            Digite aqui: <input type="text" name="nome" id="nome", class="nome">
+            <button class="botao">Adicionar</button>
+        </div>
+        <script>
+            var inputElemento = document.querySelector('input[name=nome]');
+            var btnElemento = document.querySelector('button.botao')
+            btnElemento.onclick = function(){
+                var text = inputElemento.value;
+                alert(text);
+                alert('Botão clicado');
+            }
+        </script>
+    </body>
+</html>

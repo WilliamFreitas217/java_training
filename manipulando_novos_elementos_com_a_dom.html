@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Curso Java script</title>
+    </head>
+    <body>
+        <div id = "app">
+            <input id = "nome">
+        </div>
+        <script>
+            var linkElemento =  document.createElement('a');
+            linkElemento.setAttribute('href', 'https://github.com/WilliamFreitas217/java_training');
+            linkElemento.setAttribute('title', 'Github do Will');
+            var textElemento = document.createTextNode('Acessar página do Will no github');
+            linkElemento.appendChild(textElemento);
+            var containerElemento = document.querySelector('#app');
+            containerElemento.appendChild(linkElemento);
+            // removendo elementos pelo java script
+            var inputElement = document.querySelector('#nome');
+            containerElemento.removeChild(inputElement);
+        </script>
+    </body>
+</html>
