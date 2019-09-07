@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Curso Java script</title>
+    </head>
+    <body>
+        <div id = "app">
+            <input type="text" name="nome">
+            <button onClick="adicionar()">Adicionar</button>
+            <ul class="list"></ul>
+        </div>
+        <script>
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+            var elementList = document.querySelector(".list")
+            for(var i=0; i<nomes.length;i++){
+                elementList.append(nomes[i]+' ');
+            }
+            function adicionar(){
+                var novo_nome = document.querySelector('input[name=nome]').value;
+                elementList.append(novo_nome+' ');
+            }
+        </script>
+    </body>
+</html>
