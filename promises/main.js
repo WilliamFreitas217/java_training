@@ -8,7 +8,7 @@ var myPromise = function(){
                 if (xhr.status==200){
                     resolve(JSON.parse(xhr.responseText));
                 }else{
-                    reject('E0rro na requisicao');
+                    reject('Erro na requisicao');
                 }
             }
         }
