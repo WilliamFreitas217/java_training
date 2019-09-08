@@ -4,9 +4,6 @@ var inputElement = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 var listElement = document.querySelector('#app ul');
 
-// var todos = JSON.parse(localStorage.getItem('list_todos')) ||
-//  ['Fazer café', 'Estudar Javascript', 'Acessar github'];
-
 function search(){
     var user = inputElement.value;
     var url = urlprefix+user+urlposfix;
